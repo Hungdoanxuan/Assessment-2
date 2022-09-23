@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.CheckBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Tab?>
+<?import javafx.scene.control.TabPane?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.control.TitledPane?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+
+<AnchorPane id="AnchorPane" prefHeight="400.0" prefWidth="500.0" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="vehicleregistrationfx.FXMLVehicleRecordController">
+    <children>
+        <TitledPane alignment="CENTER" animated="false" contentDisplay="CENTER" prefHeight="40.0" prefWidth="711.0" text="Vehicle Registration">
+            <content>
+                <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0" />
+            </content>
+            <font>
+                <Font size="18.0" />
+            </font>
+        </TitledPane>
+        <TabPane layoutY="32.0" prefHeight="484.0" prefWidth="711.0" tabClosingPolicy="UNAVAILABLE">
+            <tabs>
+                <Tab text="Heavy Vehicle">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="20.0" layoutY="30.0" minHeight="16" minWidth="69" text="Plate No." />
+                                <TextField layoutX="100.0" layoutY="30.0" promptText="Enter plate no" />
+                                <Button layoutX="360.0" layoutY="300.0" onAction="#handleButtonOwnerPrivateExitAction" prefHeight="30.0" prefWidth="80.0" text="Exit" />
+                                <Label layoutX="20.0" layoutY="80.0" minHeight="16" minWidth="69" text="Make" />
+                                <TextField layoutX="100.0" layoutY="80.0" promptText="Enter make" />
+                                <Label layoutX="20.0" layoutY="140.0" minHeight="16" minWidth="69" text="Model" />
+                                <TextField layoutX="101.0" layoutY="140.0" promptText="Enter model" />
+                                <Button layoutX="240.0" layoutY="300.0" onAction="#handleButtonOwnerPrivateSubmitAction" prefHeight="30.0" prefWidth="80.0" text="Submit" />
+                                <Label layoutX="22.0" layoutY="200.0" minHeight="16" minWidth="69" text="Year" />
+                                <TextField layoutX="103.0" layoutY="200.0" promptText="Enter year" />
+                                <CheckBox layoutX="356.0" layoutY="47.0" mnemonicParsing="false" text="Private Owner?" />
+                                <Label layoutX="318.0" layoutY="145.0" minHeight="16" minWidth="69" text="Owner ID" />
+                                <TextField layoutX="399.0" layoutY="145.0" promptText="Enter owner ID" />
+                                <Label layoutX="318.0" layoutY="202.0" minHeight="16" minWidth="69" text="Owner ABN" />
+                                <TextField layoutX="399.0" layoutY="202.0" promptText="Enter owner ABN" />
+                                <Label layoutX="318.0" layoutY="253.0" minHeight="16" minWidth="69" text="Load Capacity" />
+                                <TextField layoutX="399.0" layoutY="253.0" promptText="Enter load capacity" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+                </Tab>
+                <Tab text="Light Vehicle">
+                    <content>
+                        <AnchorPane minHeight="0.0" minWidth="0.0" prefHeight="180.0" prefWidth="200.0">
+                            <children>
+                                <Label layoutX="20.0" layoutY="30.0" minHeight="16" minWidth="69" text="Plate No." />
+                                <TextField layoutX="100.0" layoutY="30.0" promptText="Enter plate no" />
+                                <Button layoutX="360.0" layoutY="300.0" onAction="#handleButtonOwnerPrivateExitAction" prefHeight="30.0" prefWidth="80.0" text="Exit" />
+                                <Label layoutX="20.0" layoutY="80.0" minHeight="16" minWidth="69" text="Make" />
+                                <TextField layoutX="100.0" layoutY="80.0" promptText="Enter make" />
+                                <Label layoutX="20.0" layoutY="140.0" minHeight="16" minWidth="69" text="Model" />
+                                <TextField layoutX="101.0" layoutY="140.0" promptText="Enter model" />
+                                <Button layoutX="240.0" layoutY="300.0" onAction="#handleButtonOwnerPrivateSubmitAction" prefHeight="30.0" prefWidth="80.0" text="Submit" />
+                                <Label layoutX="22.0" layoutY="200.0" minHeight="16" minWidth="69" text="Year" />
+                                <TextField layoutX="103.0" layoutY="200.0" promptText="Enter year" />
+                                <CheckBox layoutX="356.0" layoutY="47.0" mnemonicParsing="false" text="Private Owner?" />
+                                <Label layoutX="318.0" layoutY="145.0" minHeight="16" minWidth="69" text="Owner ID" />
+                                <TextField layoutX="399.0" layoutY="145.0" promptText="Enter owner ID" />
+                                <Label layoutX="318.0" layoutY="202.0" minHeight="16" minWidth="69" text="Owner ABN" />
+                                <TextField layoutX="399.0" layoutY="202.0" promptText="Enter owner ABN" />
+                                <Label layoutX="318.0" layoutY="253.0" minHeight="16" minWidth="69" text="Enter No of Seats" />
+                                <TextField layoutX="399.0" layoutY="253.0" promptText="Enter no of Seats" />
+                            </children>
+                        </AnchorPane>
+                    </content>
+
+                </Tab>
+            </tabs>
+        </TabPane>
+    </children>
+</AnchorPane>
